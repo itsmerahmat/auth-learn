@@ -31,7 +31,7 @@ const User = mongoose.model('User', userSchema)
 
 
 // start coding
-// GET
+// GET Section
 app.get('/', (req, res) => {
    res.render('home')
 })
@@ -44,7 +44,7 @@ app.get('/login', (req, res) => {
    res.render('login')
 })
 
-//POST 
+//POST Section
 app.post('/register', (req, res) => {
    const userName = req.body.username
    const userPass = req.body.password
